@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+    <title>Comicon</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            /* background-image: url('./Untitled\ design\ \(2\).png'); */
+            
+           
+        }
+
+        h1{
+            font-family: "Anta";
+        
+        }
+
+        header {
+            background-color: #fff;
+            padding: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            height: 60px;
+            display: flex;
+            align-items: center;
+        }
+
+        .catalog-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .book-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            width: 250px;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .book-card:hover {
+            transform: scale(1.05);
+        }
+
+        .book-card img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .book-card h3 {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .book-card p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .book-card a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+            display: block;
+        }
+        .navig{
+            display: flex;
+            /* background-color: rgb(0, 0, 0); */
+            align-items: center;
+            /* padding: none   ;
+            margin-top: none; */
+            justify-content: flex-end;
+
+        }
+
+        .browse{
+            
+            background-color: white;
+            border-radius: 30px;
+            height: 30px;
+            width: 70px;
+            border: none;
+            font-weight: 700;
+            margin-left: 30px;
+        }
+
+        .browse:hover{
+            cursor: pointer;
+            background-color: black;
+            color: white;
+        }
+
+        .comm:hover{
+            cursor: pointer;
+            background-color: black;
+            color: white;
+        }
+
+        .comm{
+            background-color: white;
+            border-radius: 30px;
+            height: 30px;
+            width: 90px;
+            border: none;
+            font-weight: 700;
+            margin-right:20px;
+        }
+
+        .searchbar input {
+            border-radius: 30px; 
+            width: 900px;
+            height: 30px;
+            border: none;
+            margin-right: 40px;
+            background-color: rgba(128, 128, 128, 0.151);
+            
+        }
+
+
+        .sign {
+            background-color: white;
+            border-radius: 30px;
+            height: 30px;
+            width: 70px;
+            border: none;
+            font-weight: 700;
+            margin-right:20px;
+            margin-left: 30px;
+
+        }
+
+        .sign:hover{
+            cursor: pointer;
+            background-color: black;
+            color: white;
+        }
+
+        .login:hover{
+            cursor: pointer;
+            background-color: black;
+            color: white;
+        }
+
+        .login{
+            background-color: white;
+            border-radius: 30px;
+            height: 30px;
+            width: 70px;
+            border: none;
+            font-weight: 700;
+            margin-right:40px;
+        }
+
+        .scroll img{
+            width: 100%;
+            height: 800px;
+}
+
+.text{
+    text-align: center;
+}
+
+      
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="navig">
+            <h1>Comicon</h1>
+            <button class="browse">Browse</button>
+            <button class="comm">Community</button>
+            <form class="searchbar" action="/search" method="get">
+                <!-- <label for="search">Search:</label> -->
+                <input class="searchbar1" type="text" id="search" name="q" placeholder=" Search">
+                <!-- <input type="submit" value="Search"> -->
+            </form>
+            <button class="sign">SignUp</button>
+            <button class="login">Log In</button>
+    
+        </div>
+    
+    </header>
+
+    <div class="scroll">
+        <img src="./Untitled design (2).png" alt="">
+    </div>
+
+    <h1 class="text"> Comicon Originals</h1>
+
+    <div class="catalog-container">
+
+
+        <div class="book-card">
+            <img src="./images/WhatsApp Image 2024-03-06 at 12.02.00_2164bd56.jpg" alt="Book Cover 1">
+            <h3>Through the Cosmic Veil: The Legend of Sachin and the Galactic Explorers</h3>
+            <p>A Space Comic</p>
+            <a href="/story2.html">Read Now</a>
+        </div>
+
+        <div class="book-card">
+            <img src="./images/coverpage.jpg" alt="Book Cover 2">
+            <h3>The Quest for the Legendary Anime Artifact</h3>
+            <p>Devils Promise</p>
+            <a href="/space.html">Read Now</a>
+        </div>  
+
+        <div class="book-card">
+            <img src="./images/images3/coverpage.jpg" alt="Book Cover 2">
+            <h3>La La Land</h3>
+            <p>A College love Story</p>
+            <a href="/prem.html">Read Now</a>
+        </div>
+
+        <div class="book-card">
+            <img src="./images/image3/cover.jpg" alt="Book Cover 2">
+            <h3>Finaly Glory</h3>
+            <p>A Powerful Football Tale</p>
+            <a href="/foot.html">Read Now</a>
+        </div>
+
+        <!-- Add more book cards as needed -->
+
+    </div>
+
+</body>
+</html>
